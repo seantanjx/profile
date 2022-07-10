@@ -1,30 +1,35 @@
-import React from 'react';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter } from 'react-router-dom';
-import { ThemeProvider } from 'styled-components';
-import useDarkMode from 'use-dark-mode';
-import AppContext from './AppContext';
-import MainApp from './MainApp';
-import GlobalStyles from './theme/GlobalStyles';
-import { lightTheme, darkTheme } from './theme/themes';
+import { useState, useEffect } from "react";
+import { Navigation } from "./components/navigation";
+import { Header } from "./components/header";
+import { About } from "./components/about";
+import { Services } from "./components/services";
+import { Products } from "./components/products";
+import { Contact } from "./components/contact";
+import JsonData from "./data/data.json";
+import SmoothScroll from "smooth-scroll";
+import "./App.css";
 
-function App() {
-  window.matchMedia = null;
-  const darkMode = useDarkMode(true);
+export const scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 1000,
+  speedAsDuration: true,
+});
+
+const App = () => {
+  const [landingPageData, setLandingPageData] = useState({});
+  useEffect(() => {
+    setLandingPageData(JsonData);
+  }, []);
 
   return (
-    <AppContext.Provider value={{ darkMode }}>
-      <ThemeProvider theme={darkMode.value ? darkTheme : lightTheme}>
-        <GlobalStyles />
-        <div className="App">
-          <BrowserRouter>
-            <MainApp />
-          </BrowserRouter>
-        </div>
-      </ThemeProvider>
-    </AppContext.Provider>
+    <div>
+      <Navigation />
+      <Header data={landingPageData.Header} />
+      <About data={landingPageData.About} />
+      <Services data={landingPageData.Services} />
+      <Products data={landingPageData.Products}/>
+      <Contact data={landingPageData.Contact} />
+    </div>
   );
-}
+};
 
 export default App;
