@@ -1,41 +1,82 @@
-export const About = (props) => {
-  return (
-    <div id="about">
-      <div className="container">
-        <div className="row">
-          <div className="col-xs-12 col-md-6">
-            {" "}
-            <img src="img/About.jpeg" className="img-responsive" alt="" />{" "}
-          </div>
-          <div className="col-xs-12 col-md-6">
-            <div className="about-text">
-              <h2>About Us</h2>
-              <p>{props.data ? props.data.paragraph : "loading..."}</p>
-              <h3>Why Choose Us?</h3>
-              <div className="list-style">
-                <div className="col-lg-6 col-sm-6 col-xs-12">
-                  <ul>
-                    {props.data
-                      ? props.data.Why.map((d, i) => (
-                          <li key={`${d}-${i}`}>{d}</li>
-                        ))
-                      : "loading"}
-                  </ul>
-                </div>
-                <div className="col-lg-6 col-sm-6 col-xs-12">
-                  <ul>
-                    {props.data
-                      ? props.data.Why2.map((d, i) => (
-                          <li key={`${d}-${i}`}> {d}</li>
-                        ))
-                      : "loading"}
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+import React, { useState, useEffect, useContext } from 'react';
+import { ThemeContext } from 'styled-components';
+import ReactMarkdown from 'react-markdown';
+import { Container, Col, Row } from 'react-bootstrap';
+import PropTypes from 'prop-types';
+import Fade from 'react-reveal';
+import Header from './Header';
+import endpoints from '../constants/endpoints';
+import FallbackSpinner from './FallbackSpinner';
+
+const styles = {
+  introTextContainer: {
+    margin: 10,
+    flexDirection: 'column',
+    whiteSpace: 'pre-wrap',
+    textAlign: 'left',
+    fontSize: '1.2em',
+    fontWeight: 500,
+  },
+  introImageContainer: {
+    margin: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+    display: 'flex',
+  },
 };
+
+function About(props) {
+  const theme = useContext(ThemeContext);
+  const { header } = props;
+  const [data, setData] = useState(null);
+
+  const parseIntro = (text) => (
+    <ReactMarkdown
+      children={text}
+    />
+  );
+
+  useEffect(() => {
+    fetch(endpoints.about, {
+      method: 'GET',
+    })
+      .then((res) => res.json())
+      .then((res) => setData(res))
+      .catch((err) => err);
+  }, []);
+
+  return (
+    <>
+      <Header title={header} />
+      <div className="section-content-container">
+        <Container>
+          {data
+            ? (
+              <Fade>
+                <Row>
+                  <Col style={styles.introTextContainer}>
+                    {parseIntro(data.about)}
+                    <ol className="show">
+                      {
+                        data.dramas.map((show, i) => <li key={i}><a style={{color:`${theme.color}`}} href={show.url} target="_blank" rel="noreferrer">{show.name}</a></li>)
+                      }
+                    </ol>
+                  </Col>
+                  <Col style={styles.introImageContainer}>
+                    <img src={data?.imageSource} alt="profile" />
+                  </Col>
+                </Row>
+              </Fade>
+            )
+            : <FallbackSpinner />}
+        </Container>
+      </div>
+    </>
+  );
+}
+
+About.propTypes = {
+  header: PropTypes.string.isRequired,
+};
+
+export default About;
