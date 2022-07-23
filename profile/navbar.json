@@ -7,7 +7,7 @@
   "sections": [
     {
       "title": "Home",
-      "href": "/profile/"
+      "href": "/profile/home"
     },
     {
       "title": "About",
@@ -24,15 +24,6 @@
     {
       "title": "Experience",
       "href": "/profile/experience"
-    },
-    {
-      "title": "Projects",
-      "href": "/profile/projects"
-    },
-    {
-      "title": "Resume",
-      "href": "https://drive.google.com/file/d/13kaPsdMNDsM4LV9g7m5-E5PTildp-yYf/view?usp=sharing",
-      "type": "link"
     }
   ]
 }

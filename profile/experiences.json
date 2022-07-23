@@ -1,33 +1,69 @@
 {
-    "experiences": [
-        {
-            "title": "Software Engineer",
-            "subtitle": "XYZ Ltd",
-            "workType": "Full-time",
-            "workDescription": [
-                "Integrated **2** new product.",
-                "Worked on adding **def** to **bcd**. Improved speed by 50%."
-            ],
-            "dateText": "06/20XX – Present"
-        },
-        {
-            "title": "Software Engineer",
-            "subtitle": "XYZ Ltd",
-            "workType": "Internship",
-            "workDescription": [
-                "Worked on abc."
-            ],
-            "dateText": "01/20XX – 05/20XX"
-        },
-        {
-            "title": "App Developer",
-            "subtitle": "ABC Pvt Ltd",
-            "workType": "Freelance",
-            "workDescription": [
-                "Developed the official apps for the startup for both Android and iOS using hybrid framework.",
-                "Done bcd work."
-            ],
-            "dateText": "09/20XX – 01/20YY"
-        }
-    ]
+  "experiences": [
+    {
+      "company": "Site Reliability Engineer",
+      "title": "Tencent",
+      "workType": "Internship",
+      "workDescription": [
+        "Streamlined collection of server logs by integrating ELK pipeline into the team's workflow",
+        "Implemented monitoring and visualisation of key metrics of servers in various VPCs using Prometheus and Grafana",
+        "Investigated server redundancy on services deployed on Tencent Cloud using JMeter",
+        "Built an error budget dashboard which helped to reduce time for SLO evaluation by 50%"
+      ],
+      "dateText": "May 2022 – Aug 2022"
+    },
+    {
+      "company": "AI Engineer",
+      "title": "IMDA",
+      "workType": "Internship",
+      "workDescription": [
+        "Led the research on AI governance to evaluate the fairness, explainability and robustness of AI/ML models",
+        "Conducted a sharing to the AIPO team on how to enhance the robustness of AI/ML models"
+      ],
+      "dateText": "Jan 2022 – May 2022"
+    },
+    {
+      "company": "Software Engineer",
+      "title": "ShopBack",
+      "workType": "Internship",
+      "workDescription": [
+        "Worked in a cross functional team to manage systems that supports operations in 9 countries",
+        "Engineered application components in an Agile environment, shipping features from sandboxes to production",
+        "Identified and streamlined campaign onboarding process that increased user's productivity by 30%"
+      ],
+      "dateText": "May 2021 – Aug 2021"
+    },
+    {
+      "company": "Software Engineer",
+      "title": "GovTech",
+      "workType": "Internship",
+      "workDescription": [
+        "Part of the NDI Digital Signing team (Sign with Singpass) that provides businesses and government bodies the service to electronically sign contracts, agreements, and legal documents",
+        "Designed and engineered a web application that verifies documents’ embedded digital signatures and conformance to the PAdES standard"
+      ],
+      "dateText": "May 2021 – Aug 2021"
+    },
+    {
+      "company": "Business Intelligence Analyst",
+      "title": "Shopee",
+      "workType": "Internship",
+      "workDescription": [
+        "Engineered automated dashboards using Data Nexus and Lumos (SQL query engine) to track key performance metrics tailored to requirements laid out by business stakeholders",
+        "Developed solutions for ad-hoc data requests to deliver key business insights to various stakeholders",
+        "Designed Tableau and Google Sheets dashboards to better visualize key metrics, enabling non-data trained stakeholders to effectively review campaign performances"
+      ],
+      "dateText": "May 2020 – Aug 2020"
+    },
+    {
+      "company": "Business Analyst",
+      "title": "United Overseas Bank (UOB)",
+      "workType": "Internship",
+      "workDescription": [
+        "Responsible for translating business requirements into technical documents and vice versa to facilitate communication between business and IT departments",
+        "System Integration Testing (SIT) and User Acceptance Testing (UAT) of quarterly feature releases",
+        "Involved in the quarterly release production implementation (Dec 2016) tasked to tracked deployment progress to production"
+      ],
+      "dateText": "May 2020 – Aug 2020"
+    }
+  ]
 }

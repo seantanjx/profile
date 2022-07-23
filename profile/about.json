@@ -1,5 +1,26 @@
 {
-    "about": " This is where you can describe about **yourself**. The more you describe about yourself, the better it is!\n\n\nExtra Information about you, like hobbies and your goals.\nExample Paragraph: I am passionate about my work. Because I love what I do, I have a steady source of motivation that drives me to do my best. In my last job, this passion led me to challenge myself daily and learn new skills that helped me to do better work. For example, I taught myself how to use Photoshop to improve the quality of our photos and graphics. I soon became the go-to person for any design needs.",
-    "imageSource": "images/about/profile.png"
-    
+  "about": "I am Sean! A final year undergraduate from Singapore Management University, with a bachelors in Information Systems. I am a final year student from Singapore Management University (SMU) majoring in Information Systems.\n\nI spend my free time watching dramas (specifically chinese historical/wuxia) and hunting for nice food/cafes.\n\nHere are my top 5 drama recommendations:",
+  "imageSource": "images/about/profile.jpg",
+  "dramas": [
+    {
+      "name": "Nirvana In Fire (琅琊榜)",
+      "url": "https://mydramalist.com/9025-nirvana-in-fire"
+    },
+    {
+      "name": "Story of Yanxi Palace (延禧攻略)",
+      "url": "https://mydramalist.com/28565-the-tale-of-yanxi-palace"
+    },
+    {
+      "name": "The Deer and the Cauldron (鹿鼎记)",
+      "url": "https://mydramalist.com/8111-the-deer-and-the-cauldron"
+    },
+    {
+      "name": "Princess Agents (楚乔传)",
+      "url": "https://mydramalist.com/19464-princess-agents"
+    },
+    {
+      "name": "Who Rules the World (且试天下)",
+      "url": "https://mydramalist.com/54851-try-the-world"
+    }
+  ]
 }
