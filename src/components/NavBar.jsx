@@ -61,7 +61,7 @@ const NavBar = () => {
     >
       <Container>
         {data?.logo && (
-          <Navbar.Brand href="/profile/home">
+          <Navbar.Brand href="/profile/">
             <img
               src={data?.logo?.source}
               className="d-inline-block align-top"
