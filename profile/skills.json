@@ -45,10 +45,6 @@
         {
           "icon": "images/skills/django.png",
           "title": "django"
-        },
-        {
-          "icon": "images/skills/nodejs.png",
-          "title": "Nodejs"
         }
       ]
     },
