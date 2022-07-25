@@ -1,10 +1,14 @@
 {
-  "about": "I am Sean! A final year undergraduate from Singapore Management University, with a bachelors in Information Systems. I am a final year student from Singapore Management University (SMU) majoring in Information Systems.\n\nI spend my free time watching dramas (specifically chinese historical/wuxia) and hunting for nice food/cafes.\n\nHere are my top 5 drama recommendations:",
+  "about": "I am a final year undergraduate from Singapore Management University, and I enjoy building products using what I have learnt in computer science. \n\nIn my free time, I love to explore and play around with new technologies and so my recent endeavour was a DIY smart home system to integrate automations to my smart home devices.\n\nI am a HUGE (I mean HUGGE) coffee lover! I make my own traditional Nanyang Coffee at home, and I'll always go for Kopi C Siu Dai at any time of the day. So hit me up if you have any traditional coffee/cafe recommendations!\n\nI also love watching dramas - Chinese Wuxia/Historical, American Sitcoms, Korean Romcoms, and there are my top 5 drama recommendations:",
   "imageSource": "images/about/profile.jpg",
   "dramas": [
     {
       "name": "Nirvana In Fire (琅琊榜)",
       "url": "https://mydramalist.com/9025-nirvana-in-fire"
+    },
+    {
+      "name": "F.R.I.E.N.D.S",
+      "url": "https://www.imdb.com/title/tt0108778/"
     },
     {
       "name": "Story of Yanxi Palace (延禧攻略)",
@@ -17,10 +21,6 @@
     {
       "name": "Princess Agents (楚乔传)",
       "url": "https://mydramalist.com/19464-princess-agents"
-    },
-    {
-      "name": "Who Rules the World (且试天下)",
-      "url": "https://mydramalist.com/54851-try-the-world"
     }
   ]
 }
