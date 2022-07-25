@@ -3,22 +3,22 @@
     {
       "component": "About",
       "path": "/profile/about",
-      "headerTitle": "About"
+      "headerTitle": "about me."
     },
     {
       "component": "Skills",
       "path": "/profile/skills",
-      "headerTitle": "Skills"
+      "headerTitle": "skills."
     },
     {
       "component": "Education",
       "path": "/profile/education",
-      "headerTitle": "Education"
+      "headerTitle": "education."
     },
     {
       "component": "Experience",
       "path": "/profile/experience",
-      "headerTitle": "Experience"
+      "headerTitle": "experience."
     },
     {
       "component": "Projects",
