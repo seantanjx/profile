@@ -7,23 +7,23 @@
   "sections": [
     {
       "title": "Home",
-      "href": "/profile/"
+      "href": "/"
     },
     {
       "title": "About",
-      "href": "/profile/about"
+      "href": "/about"
     },
     {
       "title": "Skills",
-      "href": "/profile/skills"
+      "href": "/skills"
     },
     {
       "title": "Education",
-      "href": "/profile/education"
+      "href": "/education"
     },
     {
       "title": "Experience",
-      "href": "/profile/experience"
+      "href": "/experience"
     }
   ]
 }
