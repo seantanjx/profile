@@ -24,6 +24,11 @@
       "component": "Projects",
       "path": "/projects",
       "headerTitle": "Projects"
+    },
+    {
+      "component": "Page404",
+      "path": "/page404",
+      "headerTitle": "404 Not Found"
     }
   ]
 }
