@@ -49,7 +49,7 @@ function Skills(props) {
               {data.skills?.map((rows) => (
                 <div key={rows.title}>
                   <br />
-                  <h3>{rows.title}</h3>
+                  <h2>{rows.title}</h2>
                   {rows.items.map((item) => (
                     <div key={item.title} style={{ display: 'inline-block' }}>
                       <img

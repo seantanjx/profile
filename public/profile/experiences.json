@@ -1,6 +1,23 @@
 {
   "experiences": [
     {
+      "company": "Infra Support Engineer",
+      "title": "Millennium Capital",
+      "workType": "Summer Analyst",
+      "workDescription": [
+      ],
+      "dateText": "May 2023 – Current"
+    },
+    {
+      "company": "Software Engineer",
+      "title": "Beep Technologies",
+      "workType": "Internship",
+      "workDescription": [
+        "Engineered and integrated a middleware for the payment service backend of a Point of Sale (POS) terminal with a third-party SDK from a payment service provider for EV charging stations"
+      ],
+      "dateText": "Jan 2023 – Apr 2023"
+    },
+    {
       "company": "Site Reliability Engineer",
       "title": "Tencent",
       "workType": "Internship",

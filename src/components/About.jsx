@@ -11,7 +11,7 @@ import FallbackSpinner from './FallbackSpinner';
 const styles = {
   introTextContainer: {
     margin: 10,
-    flexDirection: 'column',
+    // flexDirection: 'column',
     whiteSpace: 'pre-wrap',
     textAlign: 'left',
     fontSize: '1.2em',
@@ -47,31 +47,29 @@ function About(props) {
 
   return (
     <>
-      <Header title={header} />
-      <div className="section-content-container">
-        <Container>
-          {data
-            ? (
-              <Fade>
-                <Row>
-                  <Col style={styles.introTextContainer}>
-                    {parseIntro(data.about)}
-                    <ol className="show">
-                      {
-                        data.dramas.map((show, i) => <li key={i}><a style={{color:`${theme.color}`}} href={show.url} target="_blank" rel="noreferrer">{show.name}</a></li>)
-                      }
-                    </ol>
-                  </Col>
-                  <Col style={styles.introImageContainer}>
-                    <img src={data?.imageSource} alt="profile" />
-                  </Col>
-                </Row>
-              </Fade>
-            )
-            : <FallbackSpinner />}
-        </Container>
-      </div>
-    </>
+    <Header title={header} />
+    {data ? (
+      <Fade>
+        <div className="section-content-container">
+          <Container fluid="sm">
+            <Row>
+              <Col style={styles.introTextContainer}>
+                {parseIntro(data.about)}
+                <ol className="show">
+                  {
+                    data.dramas.map((show, i) => <li key={i}><a style={{color:`${theme.color}`}} href={show.url} target="_blank" rel="noreferrer">{show.name}</a></li>)
+                  }
+                </ol>
+              </Col>
+              <Col style={styles.introImageContainer}>
+                <img src={data?.imageSource} alt="profile" />
+              </Col>
+            </Row>
+          </Container>
+        </div>
+      </Fade>
+    ) : <FallbackSpinner /> }
+  </>
   );
 }
 

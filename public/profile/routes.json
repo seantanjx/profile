@@ -11,14 +11,14 @@
       "headerTitle": "skills."
     },
     {
-      "component": "Education",
-      "path": "/education",
-      "headerTitle": "education."
-    },
-    {
       "component": "Experience",
       "path": "/experience",
       "headerTitle": "experience."
+    },
+    {
+      "component": "Education",
+      "path": "/education",
+      "headerTitle": "education."
     },
     {
       "component": "Projects",

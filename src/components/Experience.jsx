@@ -68,7 +68,7 @@ function Experience(props) {
                         {item.company}
                       </h2>
                       <div style={styles.subtitleContainerStyle}>
-                        <h4 style={{ ...styles.subtitleStyle, color: theme.accentColor }}>
+                      <h4 style={{ ...styles.subtitleStyle, color: theme.accentColor }}>
                           {item.title}
                         </h4>
                         {item.workType && (
