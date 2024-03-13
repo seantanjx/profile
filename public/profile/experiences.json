@@ -1,12 +1,28 @@
 {
   "experiences": [
     {
+      "company": "Infrastructure Engineer",
+      "title": "Millennium Capital",
+      "workType": "IT Analyst",
+      "workDescription": [
+      ],
+      "dateText": "Feb 2024 – Current"
+    },
+    {
+      "company": "Tech Support Engineer",
+      "title": "Millennium Capital",
+      "workType": "IT Analyst",
+      "workDescription": [
+      ],
+      "dateText": "Oct 2023 – Jan 2024"
+    },
+    {
       "company": "Infra Support Engineer",
       "title": "Millennium Capital",
       "workType": "Summer Analyst",
       "workDescription": [
       ],
-      "dateText": "May 2023 – Current"
+      "dateText": "May 2023 – Jul 2023"
     },
     {
       "company": "Software Engineer",
